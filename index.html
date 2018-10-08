@@ -16,7 +16,7 @@
   <!-- GAME HEADER -->
   <header> Week 4 - CrystalsCollector JS/jQuery game</header>
   <!-- GAME INSTRUCTIONS -->
-  <h1>Match your score to the random score next to the crystals</h1>
+  <h1>Match your score!</h1>
   <p>Each Crystal has it's own randomly assigned value.</p>
   <p>Try and add the points to reach the target score without going over!</p>
   <p>If you go over, you loose. You must match to win the game!</p>
@@ -30,26 +30,32 @@
     <td><span id="crystal3"></span></td>
     <td><span id="crystal4"></span></td>
   </div>
-<!-- TARGET SCORE CONTAINER -->
+  <!-- TARGET SCORE CONTAINER -->
   <div class="container">
     <th>Target Score</th>
     <td><span id="targetScore"></span></td>
   </div>
-<!-- USER'S CURRENT SCORE CONTAINER -->
+  <!-- USER'S CURRENT SCORE CONTAINER -->
   <div class="container">
-    <th>Current Score</th>
+    <div id="currentScore">
+      <th>Current Score</th>
+    </div>
   </div>
-<!-- USER'S WINS/LOSSES -->
-<div class="container">
-  <th>Wins</th>
-  <th>Losses</th>
-</div>
+  <!-- USER'S WINS/LOSSES -->
+  <div class="container">
+    <div id="wins">
+      <th>Wins</th>
+    </div>
+    <div id="losses">
+      <th>Losses</th>
+    </div>
+  </div>
 
 
-<!-- FOOTER -->
-<footer>
-  Crystal Collector | jQuery & JS
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    Crystal Collector | jQuery & JS | Sienna Spargo
+  </footer>
 
 
   <!-- JQuery -->
