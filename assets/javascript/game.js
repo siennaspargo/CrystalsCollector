@@ -13,16 +13,24 @@ var crystalValues = [5, 4, 8, 1];
 
 // grab image and assign image to value
 // on click event 
+$(".crystals").on("click", function() {
+
 // ++ increment user's score
 
+currentScore += 1;
+
 // if matched score, log win
+if (currentScore === targetNumber) {
+
+  // If the numbers match we'll celebrate the user's win.
+  alert("YOU MATCHED THE NUMNERS!!!!!");
+}
 
 // if loss, log loss
-
-// alert user of loss or of win
-
-
-
-
-
+else if (counter >= targetNumber) {
+  alert("Ooops. Better luck next time.");
+}
+ 
 // reset page without reload
+
+});
