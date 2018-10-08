@@ -12,10 +12,17 @@ var currentScore = 0;
 var crystalValues = [5, 4, 8, 1];
 
 // grab image and assign image to value
-// on click event ++ increment user's score
+// on click event 
+// ++ increment user's score
 
 // if matched score, log win
 
 // if loss, log loss
+
+// alert user of loss or of win
+
+
+
+
 
 // reset page without reload
