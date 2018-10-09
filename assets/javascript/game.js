@@ -9,7 +9,9 @@ var currentScore = 0;
 
 // RANDOM VALUES FOR CRYSTALS
 // array to hold crystal values
-var crystalValues = [5, 4, 8, 1];
+var crystalValues = [5, 12, 8, 1];
+
+var increment = crystalValues[Math.round(Math.random())];
 
 // grab image and assign image to value
 // on click event 
@@ -17,7 +19,7 @@ $(".crystals").on("click", function() {
 
 // ++ increment user's score
 
-currentScore += 1;
+currentScore += increment;
 
 // if matched score, log win
 if (currentScore === targetNumber) {
@@ -27,7 +29,7 @@ if (currentScore === targetNumber) {
 }
 
 // if loss, log loss
-else if (counter >= targetNumber) {
+else if (currentScore >= targetNumber) {
   alert("Ooops. Better luck next time.");
 }
  
