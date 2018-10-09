@@ -11,28 +11,46 @@ var currentScore = 0;
 // array to hold crystal values
 var crystalValues = [5, 12, 8, 1];
 
-var increment = crystalValues[Math.round(Math.random())];
+// variable for crystal images
+var crystalImg = $("<img>");
 
+// functin for images on click
+
+
+
+// function that returns the img src info when clicked on image..
+// function myFunction() {
+//     var x = document.getElementById("crystalImg").crystalValues;
+//     document.getElementById("crystals").innerHTML = x;
+// }
+ // W3 schools
+
+$("crystalImg").on("click", function () {
+
+crystalImg.attr("data-crystalValue", crystalValues[i]);
 // grab image and assign image to value
 // on click event 
-$(".crystals").on("click", function() {
+// $(".crystalImg").on("click", function () {
 
-// ++ increment user's score
+  // ++ increment user's score
 
-currentScore += increment;
+  var crystalValue = ($(this).attr("crystalImg"));
+  crystalValue = parseInt(crystalValues);
 
-// if matched score, log win
-if (currentScore === targetNumber) {
+  currentScore += crystalValues;
 
-  // If the numbers match we'll celebrate the user's win.
-  alert("YOU MATCHED THE NUMNERS!!!!!");
-}
+  // if matched score, log win
+  if (currentScore === targetNumber) {
 
-// if loss, log loss
-else if (currentScore >= targetNumber) {
-  alert("Ooops. Better luck next time.");
-}
- 
-// reset page without reload
+    // If the numbers match we'll celebrate the user's win.
+    appendTo("<h3>Wins</h3>");
+  }
+
+  // if loss, log loss
+  else if (currentScore >= targetNumber) {
+    appendTo("<h3>Losses</h3>");
+  }
+
+  // reset page without reload
 
 });
