@@ -37,7 +37,9 @@ var losses = 0;
 
 $("#crystalImg").on("click", function () {
 
-
+// function myFunction() {
+  // var crystalValues = Math.floor((Math.random() * 10) + 1);
+  // $("#").val.("") = x;
 
 crystalImg.attr("data-crystalValue", crystalValues[i]);
 // grab image and assign image to value
