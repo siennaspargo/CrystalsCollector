@@ -14,16 +14,25 @@ var crystalValues = [5, 12, 8, 1];
 // variable for crystal images
 var crystalImg = $("<img>");
 
+
+// variables for wins and losses
+var wins = 0;
+var losses = 0;
 // functin for images on click
 
 
 
 // function that returns the img src info when clicked on image..
-// function myFunction() {
-//     var x = document.getElementById("crystalImg").crystalValues;
-//     document.getElementById("crystals").innerHTML = x;
-// }
- // W3 schools
+function myFunction() {
+    var wins = document.getElementById("crystalImg").crystalValues;
+    wins ++;
+    document.getElementById("crystals").innerHTML = wins;
+}
+function myFunction() {
+  var losses = document.getElementById("crystalImg").crystalValues;
+  losses ++;
+  document.getElementById("crystals").innerHTML = losses;
+}
 
 $("crystalImg").on("click", function () {
 
@@ -43,11 +52,13 @@ crystalImg.attr("data-crystalValue", crystalValues[i]);
   if (currentScore === targetNumber) {
 
     // If the numbers match we'll celebrate the user's win.
+    wins ++;
     appendTo("<h3>Wins</h3>");
   }
 
   // if loss, log loss
   else if (currentScore >= targetNumber) {
+    losses++;
     appendTo("<h3>Losses</h3>");
   }
 
