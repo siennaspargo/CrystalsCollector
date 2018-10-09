@@ -23,18 +23,21 @@ var losses = 0;
 
 
 // function that returns the img src info when clicked on image..
-function myFunction() {
-    var wins = document.getElementById("crystalImg").crystalValues;
-    wins ++;
-    document.getElementById("crystals").innerHTML = wins;
-}
-function myFunction() {
-  var losses = document.getElementById("crystalImg").crystalValues;
-  losses ++;
-  document.getElementById("crystals").innerHTML = losses;
-}
+// function myFunction() {
+//     var wins = document.getElementById("crystalImg").crystalValues;
+//     wins ++;
+//     document.getElementById("crystals").innerHTML = wins;
+// }
+// function myFunction() {
+//   var losses = document.getElementById("crystalImg").crystalValues;
+//   losses ++;
+//   document.getElementById("crystals").innerHTML = losses;
+// }
 
-$("crystalImg").on("click", function () {
+
+$("#crystalImg").on("click", function () {
+
+
 
 crystalImg.attr("data-crystalValue", crystalValues[i]);
 // grab image and assign image to value
@@ -43,7 +46,11 @@ crystalImg.attr("data-crystalValue", crystalValues[i]);
 
   // ++ increment user's score
 
-  var crystalValue = ($(this).attr("crystalImg"));
+  // math.floor random
+
+  // vall the function at the end to reset to the beginning of the function ( zeros in value spots )
+
+  var crystalValue = ($(this).val("crystalImg"));
   crystalValue = parseInt(crystalValues);
 
   currentScore += crystalValues;
@@ -54,6 +61,7 @@ crystalImg.attr("data-crystalValue", crystalValues[i]);
     // If the numbers match we'll celebrate the user's win.
     wins ++;
     appendTo("<h3>Wins</h3>");
+    
   }
 
   // if loss, log loss
