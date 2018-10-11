@@ -25,7 +25,7 @@ $("document").ready(function() {
 
 // reset ()
 // update the dom and variables
-// empty () 
+// empty ()
 
 
 
